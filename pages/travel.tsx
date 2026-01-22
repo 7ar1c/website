@@ -51,7 +51,7 @@ export default function Travel() {
             {/* Photo Grid */}
             <div className="p-6 overflow-y-auto grid grid-cols-1 sm:grid-cols-2 gap-4 bg-neutral-50">
               {selectedLocation.photos.map((photo, idx) => (
-                <div key={idx} className="relative aspect-[4/3] group">
+                <div key={idx} className="relative aspect-4/3 group">
                   <img
                     src={photo}
                     alt={`${selectedLocation.title} ${idx + 1}`}

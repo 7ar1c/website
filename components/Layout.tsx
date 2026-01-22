@@ -33,11 +33,11 @@ export default function Layout({ children }: LayoutProps) {
       
       {/* Navigation */}
       <nav className="max-w-2xl mx-auto py-12 px-6 flex items-center gap-8 text-sm">
-        {navLink('/', 'Home')}
-        {navLink('/about', 'About')}
-        {navLink('/experience', 'Experience')}
-        {navLink('/resume', 'Resume')}
-        {navLink('/travel', 'Travel')}
+        {navLink('/', 'home')}
+        {navLink('/about', 'about')}
+        {navLink('/experience', 'experience')}
+        {navLink('/resume', 'resume')}
+        {navLink('/travel', 'travel')}
       </nav>
       
       {/* Main Content */}

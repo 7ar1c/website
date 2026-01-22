@@ -1,10 +1,11 @@
 export const personalInfo = {
-  name: "Taric Somani",
-  tagline: "Mathematical Physics Student",
+  name: "taric",
+  tagline: "mathematical physics student",
   bio: "I am an Honours Bachelor of Science student at the University of Waterloo, specializing in Mathematical Physics. My work bridges the gap between rigorous theoretical modeling—like quantum mechanics and complex analysis—and practical applications in sustainable capital markets and clean electrification.",
   email: "taric.somani@uwaterloo.ca",
   github: "github.com/7ar1c",
   linkedin: "linkedin.com/in/taric-somani",
+  location: "Waterloo, Canada",
 };
 
 export const experiences = [
