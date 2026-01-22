@@ -38,6 +38,7 @@ export default function Layout({ children }: LayoutProps) {
         {navLink('/experience', 'experience')}
         {navLink('/travel', 'travel')}
         {navLink('/resume', 'resume')}
+        {navLink('/contact', 'contact')}
       </nav>
       
       {/* Main Content */}

@@ -3,9 +3,11 @@ export const personalInfo = {
   tagline: "mathematical physics student",
   bio: "I am an Honours Bachelor of Science student at the University of Waterloo, specializing in Mathematical Physics. My work bridges the gap between rigorous theoretical modeling—like quantum mechanics and complex analysis—and practical applications in sustainable capital markets and clean electrification.",
   email: "taric.somani@uwaterloo.ca",
-  github: "github.com/7ar1c",
-  linkedin: "linkedin.com/in/taric-somani",
+  github: "https://github.com/7ar1c",
+  linkedin: "https://linkedin.com/in/taric-somani",
   location: "Waterloo, Canada",
+  phone: "+1 (236) 688-1109",
+  calendly: "https://calendly.com/taric-somani/"
 };
 
 export const experience = [

@@ -5,13 +5,13 @@ export default function Resume() {
   return (
     <Layout>
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold">Resume</h1>
+        <h1 className="text-3xl font-bold">resume</h1>
         <a 
           href="/resume.pdf" 
           download 
           className="bg-neutral-900 text-white px-4 py-2 text-sm rounded hover:bg-neutral-700 transition"
         >
-          Download PDF
+          download pdf
         </a>
       </div>
       
