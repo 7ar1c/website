@@ -15,8 +15,6 @@ export default function Home() {
       .then((data) => {
         if (data.location) {
           setCurrentLocation(data.location);
-          // 2. ADD THIS LINE
-          // This saves the time from the API to your state
           if (data.timestamp) setLastUpdated(data.timestamp);
         }
       });
@@ -26,19 +24,15 @@ export default function Home() {
     <Layout>
       <section className="space-y-6">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
-          Hi, I'm {personalInfo.name}.
+          welcome!
         </h1>
         
         {/* 3. PASS THE TIMESTAMP PROP HERE */}
         <LocationBadge location={currentLocation} timestamp={lastUpdated} />
 
         <p className="text-lg text-neutral-600 leading-relaxed">
-          {personalInfo.tagline}. I build tools at the intersection of 
-          <span className="font-semibold text-neutral-800"> computational physics</span> and 
-          <span className="font-semibold text-neutral-800"> sustainable energy</span>.
+          hi, i'm {personalInfo.name}! welcome to my website! currently studying mathematical physics at uwaterloo.
         </p>
-        
-        {/* ... rest of your code ... */}
       </section>
     </Layout>
   );

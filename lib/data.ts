@@ -37,15 +37,15 @@ export const education = [
     degree: "Honours B.Sc. in Mathematical Physics",
     school: "University of Waterloo",
     period: "Sept 2022 - Apr 2027 (Proj.)",
-    details: "Focus on Quantum Mechanics, Thermodynamics, and Computational Physics."
+    details: "currently taking courses in quantum mechanics, statistical mechanics, machine learning, partial differential equations and complex analysis. last semester, my average was 91.8%.",
   }
 ];
 
 export const projects = [
   {
-    title: "Black Hole Ray Tracer",
-    tech: ["Python", "Physics Simulation"],
-    description: "Designed a simulation to visualize light paths around black holes, applying concepts of general relativity and nonlinear advection."
+    title: "three body problem simulation",
+    tech: ["Python", "OpenGL"],
+    description: "Designed a simulation that models the gravitational interactions of three bodies in space, visualized using OpenGL."
   }
 ];
 

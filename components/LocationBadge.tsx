@@ -27,7 +27,7 @@ export default function LocationBadge({ location, timestamp }: Props) {
         <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
       </span>
       <div className="flex flex-col sm:flex-row sm:gap-2 sm:items-baseline">
-        <span>Based in <span className="font-semibold text-neutral-900">{location}</span></span>
+        <span>currently in <span className="font-semibold text-neutral-900">{location}</span></span>
         
         {/* Only show timestamp if it exists */}
         {timestamp && (

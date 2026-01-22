@@ -34,10 +34,10 @@ export default function Layout({ children }: LayoutProps) {
       {/* Navigation */}
       <nav className="max-w-2xl mx-auto py-12 px-6 flex items-center gap-8 text-sm">
         {navLink('/', 'home')}
-        {navLink('/about', 'about')}
+        {navLink('/about', 'me!')}
         {navLink('/experience', 'experience')}
-        {navLink('/resume', 'resume')}
         {navLink('/travel', 'travel')}
+        {navLink('/resume', 'resume')}
       </nav>
       
       {/* Main Content */}
