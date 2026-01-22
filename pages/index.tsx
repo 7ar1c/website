@@ -45,7 +45,7 @@ export default function Home() {
   {/* The Text - Now only 'gap-2' (0.5rem) away instead of 'space-y-6' */}
   <p className="text-sm text-neutral-600 leading-relaxed max-w-2xl">
     <a 
-      href={"testlink"}
+      href={"../contact"}
       target="_blank" 
       rel="noreferrer"
       className="ml-1 text-neutral-900 hover:underline"
