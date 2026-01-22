@@ -8,35 +8,40 @@ export const personalInfo = {
   location: "Waterloo, Canada",
 };
 
-export const experiences = [
+export const experience = [
   {
     id: 1,
-    role: "Junior Analyst, Clean Electrification",
-    company: "The Atmospheric Fund (TAF)",
-    period: "May 2025 - Aug 2025",
-    description: "Supported initiatives in clean electrification and sustainable development, focusing on data analysis and technical consulting for energy markets.",
+    role: "junior analyst, clean electrification",
+    company: "the atmospheric fund (taf)",
+    period: "may 2025 - aug 2025",
+    description: `developed a research brief on the IESO's readiness for electrification,
+    created a KPI framework for a residential solar and storage pilot, redesigned the data pipelines for the annual TAF emissions factor report,
+    wrote a couple of blog posts.`,
+    link: "https://taf.ca/author/taric/",
   },
   {
     id: 2,
-    role: "Project Coordinator",
-    company: "Edgecom Energy",
-    period: "Sept 2024 - Apr 2025",
-    description: "Managed energy performance projects, utilizing SQL and Python to streamline data reporting and assist in energy market analysis.",
+    role: "project coordinator",
+    company: "utrack energy",
+    period: "sept 2024 - apr 2025",
+    description: `conducted capex/opex analysis for submetering/DER systems 
+    for multi-unit residential buildings, designed a utility bill verification product which
+    generated $133,000 in revenue in 2025, secured $85,000 in non-dilutive funding for product development.`,
   },
   {
     id: 3,
-    role: "Tax Professional (Level 4)",
-    company: "H&R Block",
-    period: "Feb 2024 - Apr 2024 & Feb 2025 - Apr 2025",
-    description: "Provided expert tax preparation services during peak seasons, ensuring compliance and accuracy for diverse client portfolios.",
+    role: "level 4 tax professional",
+    company: "h&r block",
+    period: "feb 2024 - apr 2024",
+    description: "prepared over 600 tax returns for individuals and sole proprietors, earned a national top performer award.",
   }
 ];
 
 export const education = [
   {
-    degree: "Honours B.Sc. in Mathematical Physics",
-    school: "University of Waterloo",
-    period: "Sept 2022 - Apr 2027 (Proj.)",
+    degree: "honours b.sc in mathematical physics",
+    school: "university of waterloo",
+    period: "sept 2022 - apr 2027 (proj.)",
     details: "currently taking courses in quantum mechanics, statistical mechanics, machine learning, partial differential equations and complex analysis. last semester, my average was 91.8%.",
   }
 ];
@@ -44,8 +49,23 @@ export const education = [
 export const projects = [
   {
     title: "three body problem simulation",
-    tech: ["Python", "OpenGL"],
-    description: "Designed a simulation that models the gravitational interactions of three bodies in space, visualized using OpenGL."
+    tech: ["python", "opengl"],
+    description: "designed a simulation that models the gravitational interactions of three bodies in space, visualized using OpenGL.",
+    link: "https://github.com/7ar1c/three-body-problem",
+    video: "/videos/threebody.mp4",
+  },
+  {
+    title: "email cleaner",
+    tech: ["javascript"],
+    description: `instead of giving my data to a third party, used the google api to sort my spam emails
+    and unsubscribe from mailing lists.`,
+    link: "https://github.com/7ar1c/email_cleaner"
+  },
+  {
+    title: "hamiltonian solver",
+    tech: ["matlab"],
+    description: "finds the problability of a spin-1 particle being in each of its basis states after a time given a time independent hamiltonian.",
+    link: "https://github.com/7ar1c/Hamiltonian-Solver"
   }
 ];
 

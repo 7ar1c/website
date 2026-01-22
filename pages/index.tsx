@@ -6,7 +6,6 @@ import { personalInfo } from '../lib/data';
 
 export default function Home() {
   const [currentLocation, setCurrentLocation] = useState(personalInfo.location);
-  // 1. ADD THIS STATE
   const [lastUpdated, setLastUpdated] = useState<number | null>(null);
 
   useEffect(() => {
