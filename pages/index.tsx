@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import LocationBadge from '../components/LocationBadge';
 import { personalInfo } from '../lib/data';
+import MusicWidget from "../components/MusicWidget";
+import TopTracks from '../components/TopTracks';
 
 export default function Home() {
   const [currentLocation, setCurrentLocation] = useState(personalInfo.location);
@@ -51,8 +53,22 @@ export default function Home() {
       let's grab a coffee →
     </a>
   </p>
-  
-</div>
+  </div>
+
+
+  <div className="flex flex-col gap-8">
+          <h2 className="mt-4 text-sm font-semibold text-neutral-900">what's taric listening to?</h2>
+        
+        {/* Row 1: Widget (Narrow) */}
+        <div>
+           <MusicWidget />
+        </div>
+
+        {/* Row 2: Top Tracks (Full Width) */}
+        <div className="w-full">
+           <TopTracks />
+        </div>
+      </div>
 
       </section>
     </Layout>
