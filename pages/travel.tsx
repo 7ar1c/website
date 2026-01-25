@@ -43,7 +43,7 @@ export default function Travel() {
             <div className="p-4 border-b border-neutral-100 flex justify-between items-center">
               <div>
                  {/* This title comes from the Folder Name or Date */}
-                 <h2 className="text-xl font-bold capitalize">{selectedCluster.title}</h2>
+                 <h2 className="text-xl font-bold lowercase">{selectedCluster.title}</h2>
                  <span className="text-xs text-neutral-400 font-mono">
                    {selectedCluster.photos.length} photos
                  </span>

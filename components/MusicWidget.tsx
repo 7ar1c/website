@@ -15,7 +15,7 @@ export default function MusicWidget() {
     >
       
       {/* Album Art (with spin animation if playing) */}
-      <div className="relative flex-shrink-0 w-16 h-16 rounded-md overflow-hidden shadow-sm border border-neutral-100">
+      <div className="relative shrink-0 w-16 h-16 rounded-md overflow-hidden shadow-sm border border-neutral-100">
         <img 
           src={track.cover || '/default-vinyl.png'} // Add a fallback image in public folder just in case
           alt={track.album} 

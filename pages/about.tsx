@@ -1,14 +1,14 @@
 // pages/about.tsx
-import Layout from '../components/Layout';
-import { personalInfo, education, projects } from '../lib/data';
+import Layout from "../components/Layout";
+import Timeline from "../components/Timeline";
 
 export default function About() {
   return (
-    <Layout>
-      <h1 className="text-3xl font-bold mb-8">me!</h1>
-      
-      <div className="prose prose-neutral mb-12">
-        <p className="text-neutral-600 leading-7">{personalInfo.bio}</p>
+    <Layout wide={true}>
+      <div className="space-y-12">
+
+        {/* TIMELINE: Sits outside the narrow container, so it goes wide */}
+        <Timeline />
       </div>
     </Layout>
   );

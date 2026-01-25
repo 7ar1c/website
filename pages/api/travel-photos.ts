@@ -54,7 +54,7 @@ function getCityFromId(publicId: string) {
   // Ignore generic names like "travel" if that's the only folder
   if (folderName.toLowerCase() === 'travel') return null;
 
-return folderName;
+return folderName.toLowerCase();
 }
 
 // --- API HANDLER ---
@@ -74,7 +74,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       .sort_by('created_at', 'desc')
       .with_field('context')
       .with_field('image_metadata')
-      .max_results(100)
+      .max_results(500)
       .execute();
 
     // 1. Map & Clean Data

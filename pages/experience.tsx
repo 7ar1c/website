@@ -74,7 +74,7 @@ export default function Experience() {
                 <div className="text-xs font-mono text-neutral-500 mb-3 bg-neutral-100 inline-block px-2 py-1 rounded">
                   {item.tech.join(" • ")}
                 </div>
-                <p className="text-sm text-neutral-600 text-sm leading-relaxed">
+                <p className="text-sm text-neutral-600 leading-relaxed">
                   {item.description}
                 </p>
                 {item.video && (
