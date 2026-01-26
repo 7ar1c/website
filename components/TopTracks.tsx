@@ -26,7 +26,7 @@ export default function TopTracks() {
             <div className="relative aspect-square w-full rounded-md overflow-hidden bg-neutral-100 shadow-sm border border-neutral-100">
               <img 
                 src={track.cover || '/default-vinyl.png'} 
-                alt={track.name} 
+                alt={track.name}
                 className="w-full h-full object-cover transition-transform group-hover:scale-105"
               />
               {/* Tiny Rank Badge */}

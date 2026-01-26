@@ -17,8 +17,8 @@ export default function MusicWidget() {
       {/* Album Art (with spin animation if playing) */}
       <div className="relative shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-md overflow-hidden shadow-sm border border-neutral-100">
         <img 
-          src={track.cover || '/default-vinyl.png'} // Add a fallback image in public folder just in case
-          alt={track.album} 
+          src={track.cover || '/default-vinyl.png'}
+          alt={track.album}
           className={`w-full h-full object-cover ${track.isPlaying ? 'animate-spin-slow' : ''}`} 
         />
         {/* "Equalizer" overlay if playing */}

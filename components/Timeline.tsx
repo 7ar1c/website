@@ -1,5 +1,6 @@
 // components/Timeline.tsx
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const timelineData = [
   {
@@ -204,16 +205,19 @@ function TimelineContent({ item, align, centerViewport }: any) {
 function TimelineImage({ src, alt, centerViewport }: any) {
   return (
     <motion.div 
-      className="block w-full aspect-4/3 rounded-xl overflow-hidden bg-neutral-100 shadow-sm"
+      className="relative w-full aspect-4/3 rounded-xl overflow-hidden bg-neutral-100 shadow-sm"
       initial={{ filter: "grayscale(100%) opacity(0.5)" }}
       whileInView={{ filter: "grayscale(0%) opacity(1)" }}
       viewport={centerViewport}
       transition={{ duration: 0.5 }}
     >
-      <img 
+      <Image 
         src={src || "/default-placeholder.jpg"} 
-        alt={alt} 
-        className="w-full h-full object-cover"
+        alt={alt}
+        fill
+        sizes="(max-width: 768px) 100vw, 600px"
+        className="object-cover"
+        priority={false}
       />
     </motion.div>
   );
