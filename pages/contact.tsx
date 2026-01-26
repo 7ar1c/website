@@ -47,9 +47,9 @@ useEffect(() => {
     <Layout>
       {/* 1. INCREASED WIDTH to max-w-2xl so the grid cards fit nicely */}
       <section className="max-w-2xl">
-        <h1 className="text-3xl font-bold mb-8 text-neutral-900">get in touch</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-neutral-900 leading-tight">get in touch</h1>
         
-        <p className="text-neutral-600 mb-12 leading-relaxed">
+        <p className="text-neutral-600 mb-12 leading-relaxed text-base sm:text-lg break-words">
             let's grab a coffee and talk about life!
         </p>
 
@@ -83,7 +83,7 @@ useEffect(() => {
             {/* Social Links */}
             <div>
               <h3 className="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-3">On the Web</h3>
-              <div className="flex gap-6">
+              <div className="flex flex-wrap gap-4 sm:gap-6">
                 <a 
                   href={personalInfo.linkedin} 
                   target="_blank" 
@@ -108,7 +108,7 @@ useEffect(() => {
           <div>
             <h3 className="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-6">Schedule a Chat</h3>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {loading ? (
                 // Show 2 skeletons so it looks like a grid is loading
                 <>
@@ -120,7 +120,7 @@ useEffect(() => {
                   <button
                     key={index}
                     onClick={() => handleBookClick(event.url)}
-                    className="group text-left p-5 rounded-xl border border-neutral-200 hover:border-neutral-800 hover:shadow-sm transition-all bg-white"
+                    className="group text-left p-5 sm:p-6 rounded-2xl border border-neutral-200 hover:border-neutral-800 hover:shadow-sm transition-all bg-white min-h-[120px]"
                   >
                     <div className="flex justify-between items-start mb-3">
                       <span className="inline-block px-2 py-1 bg-neutral-100 text-neutral-600 text-xs font-mono rounded">

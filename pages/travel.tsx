@@ -8,7 +8,7 @@ import type { TravelCluster } from "../components/TravelMap";
 const TravelMap = dynamic(() => import("../components/TravelMap"), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-[60vh] bg-neutral-100 animate-pulse rounded-xl flex items-center justify-center">
+    <div className="w-full h-[50vh] sm:h-[60vh] bg-neutral-100 animate-pulse rounded-xl flex items-center justify-center">
       <span className="text-neutral-400">loading map...</span>
     </div>
   ),
@@ -25,18 +25,18 @@ export default function Travel() {
       </p>
 
       {/* Map */}
-      <div className="h-[60vh] w-full border border-neutral-200 rounded-xl overflow-hidden shadow-sm relative z-0">
+      <div className="h-[50vh] sm:h-[60vh] w-full max-w-full border border-neutral-200 rounded-xl overflow-hidden shadow-sm relative z-0">
         <TravelMap onClusterSelect={setSelectedCluster} />
       </div>
 
       {/* Album Modal */}
       {selectedCluster && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-start sm:items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
           onClick={() => setSelectedCluster(null)}
         >
           <div 
-            className="bg-white rounded-xl max-w-4xl w-full max-h-[85vh] overflow-hidden flex flex-col shadow-2xl"
+            className="bg-white rounded-xl max-w-4xl w-full max-h-[85vh] sm:max-h-[90vh] overflow-hidden flex flex-col shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header */}
@@ -52,11 +52,13 @@ export default function Travel() {
             </div>
 
             {/* Grid of Photos */}
-            <div className="p-6 overflow-y-auto bg-neutral-50 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="p-5 sm:p-6 overflow-y-auto bg-neutral-50 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
                {selectedCluster.photos.map((photo, idx) => (
                   <div key={idx} className="relative aspect-square group">
                     <img
                       src={photo.url}
+                      alt={`Travel photo ${idx + 1}`}
+                      loading="lazy"
                       className="w-full h-full object-cover rounded-lg shadow-sm group-hover:shadow-md transition"
                     />
                   </div>

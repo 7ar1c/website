@@ -74,7 +74,7 @@ const timelineData = [
 export default function Timeline() {
   return (
     <div className="w-full max-w-[90%] mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold text-center mb-24 text-neutral-900">
+      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-16 sm:mb-24 text-neutral-900 leading-tight">
         life so far
       </h2>
 
@@ -84,7 +84,7 @@ export default function Timeline() {
         <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-neutral-200 md:-ml-[0.5px]" />
 
         {/* BOTTOM PADDING FIX */}
-        <div className="space-y-24 pb-[40vh]"> 
+        <div className="space-y-16 sm:space-y-24 pb-[32vh] sm:pb-[40vh]"> 
           {timelineData.map((item, index) => (
             <TimelineItem key={index} item={item} index={index} />
           ))}
@@ -115,7 +115,7 @@ function TimelineItem({ item, index }: { item: any, index: number }) {
     >
       
       {/* --- LEFT SIDE --- */}
-      <div className={`w-full md:w-1/2 pl-12 md:pl-0 md:pr-8 ${!isTextRight ? 'text-right' : ''}`}>
+      <div className={`w-full md:w-1/2 pl-8 md:pl-0 md:pr-8 ${!isTextRight ? 'text-right' : ''}`}>
         
         {/* If text is supposed to be on Left (Index 1, 3...), render Text here */}
         {!isTextRight && (
@@ -147,7 +147,7 @@ function TimelineItem({ item, index }: { item: any, index: number }) {
 
 
       {/* --- RIGHT SIDE --- */}
-      <div className={`w-full md:w-1/2 pl-12 md:pl-8`}>
+      <div className={`w-full md:w-1/2 pl-8 md:pl-8`}>
         
         {/* If text is Right (Index 0, 2...), render Text here */}
         {isTextRight && (
@@ -170,7 +170,7 @@ function TimelineContent({ item, align, centerViewport }: any) {
   return (
     <div className={`flex flex-col ${align === 'right' ? 'md:items-end' : 'md:items-start'}`}>
       <motion.h3 
-        className="text-xl font-bold mb-1"
+        className="text-lg sm:text-xl font-bold mb-1"
         initial={{ color: "#a3a3a3" }}
         whileInView={{ color: "#171717" }}
         viewport={centerViewport}
@@ -180,7 +180,7 @@ function TimelineContent({ item, align, centerViewport }: any) {
       
       {/* Date is now combined with Subtitle */}
       <motion.p 
-        className="text-sm font-semibold mb-3 flex items-center gap-2"
+        className="text-xs sm:text-sm font-semibold mb-3 flex items-center gap-2"
         initial={{ color: "#a3a3a3" }}
         whileInView={{ color: "#15803d" }}
         viewport={centerViewport}
@@ -189,7 +189,7 @@ function TimelineContent({ item, align, centerViewport }: any) {
       </motion.p>
       
       <motion.p 
-        className="leading-relaxed text-left md:text-inherit w-full"
+        className="leading-relaxed text-left md:text-inherit w-full text-sm sm:text-base break-words max-w-xl"
         initial={{ color: "#d4d4d4" }}
         whileInView={{ color: "#525252" }}
         viewport={centerViewport}
@@ -204,7 +204,7 @@ function TimelineContent({ item, align, centerViewport }: any) {
 function TimelineImage({ src, alt, centerViewport }: any) {
   return (
     <motion.div 
-      className="hidden md:block w-full aspect-4/3 rounded-xl overflow-hidden bg-neutral-100 shadow-sm"
+      className="block w-full aspect-4/3 rounded-xl overflow-hidden bg-neutral-100 shadow-sm"
       initial={{ filter: "grayscale(100%) opacity(0.5)" }}
       whileInView={{ filter: "grayscale(0%) opacity(1)" }}
       viewport={centerViewport}

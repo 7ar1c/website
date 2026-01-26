@@ -34,7 +34,7 @@ export default function Layout({ children, wide = false }: LayoutProps) {
     <div className="min-h-screen bg-neutral-50 text-neutral-900 font-sans selection:bg-neutral-200">
       
       {/* 1. NAV: Always max-w-2xl (Centered & Narrow) */}
-      <nav className="max-w-2xl mx-auto py-12 px-6 flex items-center gap-8 text-sm">
+      <nav className="max-w-2xl mx-auto py-8 sm:py-12 px-6 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-sm sm:text-base">
         {navLink('/', 'home')}
         {navLink('/about', 'me!')}
         {navLink('/experience', 'experience')}

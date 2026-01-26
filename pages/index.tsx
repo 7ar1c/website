@@ -23,52 +23,45 @@ export default function Home() {
 
   return (
     <Layout>
-      <section className="space-y-6">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
+      <section className="space-y-5 sm:space-y-6">
+        <h1 className="text-3xl sm:text-5xl font-bold tracking-tight leading-tight">
           welcome!
         </h1>
-        
 
-
-        <p className="text-lg text-neutral-600 leading-relaxed">
+        <p className="text-base sm:text-lg text-neutral-600 leading-relaxed max-w-3xl">
           hi, i'm {personalInfo.name}! welcome to my website! currently studying mathematical physics at uwaterloo.
         </p>
 
-{/* 1. Wrap them in a div to group them together */}
-<div className="flex flex-col gap-2"> 
-  
-  {/* The Badge */}
-  <div> {/* Optional: Wrap in div to strip 'inline' behavior if needed */}
-     <LocationBadge location={currentLocation} timestamp={lastUpdated} />
-  </div>
+        <div className="flex flex-col gap-3 sm:gap-4">
+          <div className="max-w-full">
+            <LocationBadge location={currentLocation} timestamp={lastUpdated} />
+          </div>
 
-  {/* The Text - Now only 'gap-2' (0.5rem) away instead of 'space-y-6' */}
-  <p className="text-sm text-neutral-600 leading-relaxed max-w-2xl">
-    <a 
-      href={"../contact"}
-      target="_blank" 
-      rel="noreferrer"
-      className="ml-1 text-neutral-900 hover:underline"
-    >
-      let's grab a coffee →
-    </a>
-  </p>
-  </div>
-
-
-  <div className="flex flex-col gap-8">
-          <h2 className="mt-4 text-sm font-semibold text-neutral-900">what's taric listening to?</h2>
-        
-        {/* Row 1: Widget (Narrow) */}
-        <div>
-           <MusicWidget />
+          <p className="text-sm text-neutral-600 leading-relaxed max-w-2xl">
+            <a 
+              href={"../contact"}
+              target="_blank" 
+              rel="noreferrer"
+              className="ml-1 text-neutral-900 hover:underline"
+            >
+              let's grab a coffee →
+            </a>
+          </p>
         </div>
 
-        {/* Row 2: Top Tracks (Full Width) */}
-        <div className="w-full">
-           <TopTracks />
+        <div className="flex flex-col gap-6 sm:gap-8">
+          <h2 className="mt-2 text-xs sm:text-sm font-semibold text-neutral-900 uppercase tracking-wide">
+            what's taric listening to?
+          </h2>
+
+          <div className="w-full max-w-xl">
+            <MusicWidget />
+          </div>
+
+          <div className="w-full min-w-0">
+            <TopTracks />
+          </div>
         </div>
-      </div>
 
       </section>
     </Layout>

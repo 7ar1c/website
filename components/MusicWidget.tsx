@@ -11,11 +11,11 @@ export default function MusicWidget() {
       href={track.url} 
       target="_blank" 
       rel="noopener noreferrer"
-      className="flex items-center gap-4 p-4 border border-neutral-200 rounded-xl bg-white/50 backdrop-blur-sm shadow-sm max-w-sm transition-all hover:shadow-md hover:scale-[1.02] group"
+      className="flex w-full sm:max-w-sm items-center gap-3 sm:gap-4 p-3 sm:p-4 border border-neutral-200 rounded-xl bg-white/60 backdrop-blur-sm shadow-sm transition-all hover:shadow-md hover:scale-[1.02] group"
     >
       
       {/* Album Art (with spin animation if playing) */}
-      <div className="relative shrink-0 w-16 h-16 rounded-md overflow-hidden shadow-sm border border-neutral-100">
+      <div className="relative shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-md overflow-hidden shadow-sm border border-neutral-100">
         <img 
           src={track.cover || '/default-vinyl.png'} // Add a fallback image in public folder just in case
           alt={track.album} 
@@ -33,7 +33,7 @@ export default function MusicWidget() {
 
       <div className="flex-1 min-w-0">
         <div className="flex items-center justify-between mb-1">
-          <p className="text-xs font-bold uppercase tracking-wider text-green-600">
+          <p className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-green-600">
             {track.isPlaying ? 'Now Listening' : 'Last Played'}
           </p>
           {track.isPlaying && (
@@ -44,10 +44,10 @@ export default function MusicWidget() {
           )}
         </div>
         
-        <p className="font-bold text-neutral-900 truncate leading-tight group-hover:text-green-600 transition-colors">
+        <p className="font-bold text-neutral-900 truncate leading-tight group-hover:text-green-600 transition-colors text-sm sm:text-base">
           {track.song}
         </p>
-        <p className="text-sm text-neutral-500 truncate">
+        <p className="text-xs sm:text-sm text-neutral-500 truncate">
           {track.artist}
         </p>
       </div>
