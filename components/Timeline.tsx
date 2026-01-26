@@ -10,7 +10,7 @@ const timelineData = [
     i (ungracefully) ripped apart an old laptop just to see what was inside. i also got into music during this time. my mom's friend bought
     me a small keyboard for christmas one year, and i was sold! from then on, music has been a massive part of my life.
     `,
-    image: "/images/taric_young.jpg" 
+    image: "/images/taric_young1.jpg" 
   },
   {
     date: "2009-2017",
@@ -18,7 +18,7 @@ const timelineData = [
     description: `rapid fire elementary school highlights: learned to read/write, started cross country running (10km in <1hr in grade 4!), was the vampire in dear edwina jr. (shoutout dr. bespflug),
     and got really into basketball. 
     `,
-    image: "/images/elementary.jpg"
+    image: "/images/elementary1.jpg"
   },
   {
     date: "2017-2020",
@@ -28,7 +28,7 @@ const timelineData = [
     and lost some too. i messed up a lot, but learned a lot as well. picked up model un, guitar and the bass clarinet. joined the local orchestra 
     and the basketball team. lots of lunchtime jam sessions in the band room with friends.
     `,
-    image: "/images/high_school.jpg"
+    image: "/images/high_school1.jpg"
   },
   {
     date: "2020",
@@ -37,7 +37,7 @@ const timelineData = [
     picked up mountain biking as a hobby during this time as well, one of the best decisions i've made! started working at a restaurant 
     in summer 2020 as a busser which was nice to get me out of the house and socializing a bit.
     `,
-    image: "/images/covid.jpg"
+    image: "/images/covid1.jpg"
   },
   {
     date: "2020-2022",
@@ -46,7 +46,7 @@ const timelineData = [
     advanced courses in grade 11, and take university courses in grade 12 at sfu. this is where i first really got into physics.
     also joined the jazz band and got to learn tenor sax. got promoted to server, then assistant manager at the restaurant.
     other cool things i did: wrote and presented a ted talk about moral philosophy, played varsity soccer, got my duke of edinburgh bronze award.`,
-    image: "/images/hspt2.jpeg"
+    image: "/images/hspt21.jpeg"
   },
   {
     date: "2022-present",
@@ -56,7 +56,7 @@ const timelineData = [
     after my first semester. in between 2nd and 3rd year, lived in toronto for a year for internships. 
     started travelling a lot more too. since i started university, i've been to kenya, japan, and a few countries in europe.
     `,
-    image: "/images/taricuni.jpeg"
+    image: "/images/taricuni1.jpeg"
   },
   {
     date: "present - ??",
@@ -65,7 +65,7 @@ const timelineData = [
     career-wise, i'm hoping to get involved in technical consulting in the energy industry, or maybe persue a masters in data science.
     either way, i'm excited to see where life takes me! one thing i know for sure, is that i will never stop being the curious kid i was back in 2004.
     `,
-    image: "/images/future.jpeg"
+    image: "/images/future1.jpeg"
 
 
   }
