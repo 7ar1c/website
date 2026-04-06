@@ -50,6 +50,13 @@ export const education = [
 
 export const projects = [
   {
+    title: "neural posterior estimation for the inverse three body problem",
+    tech: ["python", "pytorch"],
+    description:
+      "used neural posterior estimation to predict the posterior distribution of the initial conditions of a three body system given a noisy observation of the system at a later time.",
+    link: "https://github.com/7ar1c/three_body_npe/blob/main/final_results/Neural%20Posterior%20Estimation%20Chaotic%20Three%20Body%20Problem.pdf"
+  },
+    {
     title: "three body problem simulation",
     tech: ["python", "opengl"],
     description: "designed a simulation that models the gravitational interactions of three bodies in space, visualized using OpenGL.",
