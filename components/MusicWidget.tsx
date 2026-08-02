@@ -1,8 +1,8 @@
 // components/MusicWidget.tsx
-import { useLastFM } from '../hooks/useLastFM';
+import { useSpotifyNowPlaying } from '../hooks/useSpotifyNowPlaying';
 
 export default function MusicWidget() {
-  const track = useLastFM();
+  const track = useSpotifyNowPlaying();
 
   if (!track) return null; // Hidden while loading
 
