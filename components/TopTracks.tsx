@@ -43,9 +43,6 @@ export default function TopTracks() {
               <p className="text-[10px] text-neutral-500 truncate">
                 {track.artist}
               </p>
-              <p className="text-[10px] text-neutral-400 mt-0.5">
-                {track.playcount} plays
-              </p>
             </div>
           </a>
         ))}
