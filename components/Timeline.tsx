@@ -54,7 +54,7 @@ const timelineData = [
     title: "university",
     description: `by far the biggest transition of my life. moved to a new province and started living on my own at 17.
     originally accepted to science and business at uwaterloo, but quickly realized it wasn't for me, so switched to mathematical physics
-    after my first semester. in between 2nd and 3rd year, lived in toronto for a year for internships. 
+    after my first semester. in between 2nd and 3rd year, lived in toronto for a year for internships. lived in london for a summer for an internship as well.
     started travelling a lot more too. since i started university, i've been to kenya, japan, and a few countries in europe.
     `,
     image: "/images/taricuni1.jpeg"
@@ -63,7 +63,7 @@ const timelineData = [
     date: "present - ??",
     title: "whats next?",
     description: `still figuring that out! i want to keep travelling for sure, and hopefully get to live in different parts of the world.
-    career-wise, i'm hoping to get involved in technical consulting in the energy industry, or maybe persue a masters in data science.
+    career-wise, i'm hoping to stay involved in environmental product markets, or maybe persue a masters in data science.
     either way, i'm excited to see where life takes me! one thing i know for sure, is that i will never stop being the curious kid i was back in 2004.
     `,
     image: "/images/future1.jpeg"

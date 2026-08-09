@@ -12,8 +12,15 @@ export const personalInfo = {
 };
 
 export const experience = [
-  {
+    {
     id: 1,
+    role: "environmental markets analyst",
+    company: "energy aspects",
+    period: "may 2026 - aug 2026",
+    description: `built a model of the wci carbon market and fed it geospatial satellite data, wrote market research articles based on the output. also modelled the turkish, japanese and australian ets's.`,
+  },
+  {
+    id: 2,
     role: "junior analyst, clean electrification",
     company: "the atmospheric fund (taf)",
     period: "may 2025 - aug 2025",
@@ -23,7 +30,7 @@ export const experience = [
     link: "https://taf.ca/author/taric/",
   },
   {
-    id: 2,
+    id: 3,
     role: "project coordinator",
     company: "utrack energy",
     period: "sept 2024 - apr 2025",
@@ -32,7 +39,7 @@ export const experience = [
     generated $133,000 in revenue in 2025, secured $85,000 in non-dilutive funding for product development.`,
   },
   {
-    id: 3,
+    id: 4,
     role: "level 4 tax professional",
     company: "h&r block",
     period: "feb 2024 - apr 2024",
