@@ -52,7 +52,7 @@ const timelineData = [
   {
     date: "2022-present",
     title: "university",
-    description: `by far the biggest transition of my life. moved to a new province and started living on my own.
+    description: `by far the biggest transition of my life. moved to a new province and started living on my own at 17.
     originally accepted to science and business at uwaterloo, but quickly realized it wasn't for me, so switched to mathematical physics
     after my first semester. in between 2nd and 3rd year, lived in toronto for a year for internships. 
     started travelling a lot more too. since i started university, i've been to kenya, japan, and a few countries in europe.

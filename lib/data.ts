@@ -7,6 +7,7 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/taric-somani",
   location: "Waterloo, Canada",
   phone: "+1 (236) 688-1109",
+  phoneSecondary: "+44 7962 835977",
   calendly: "https://calendly.com/taric-somani/"
 };
 

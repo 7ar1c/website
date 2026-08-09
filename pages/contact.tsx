@@ -72,12 +72,22 @@ useEffect(() => {
             {/* Phone */}
             <div className="group">
               <h3 className="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-1">Phone</h3>
-              <a 
-                href={`tel:${personalInfo.phone}`} 
-                className="text-lg text-neutral-900 hover:text-neutral-500 transition-colors"
-              >
-                {personalInfo.phone}
-              </a>
+              <div className="flex flex-col">
+                <a 
+                  href={`tel:${personalInfo.phone}`} 
+                  className="text-lg text-neutral-900 hover:text-neutral-500 transition-colors w-fit"
+                >
+                  {personalInfo.phone}
+                </a>
+                {personalInfo.phoneSecondary && (
+                  <a
+                    href={`tel:${personalInfo.phoneSecondary}`}
+                    className="text-lg text-neutral-900 hover:text-neutral-500 transition-colors w-fit mt-2"
+                  >
+                    {personalInfo.phoneSecondary}
+                  </a>
+                )}
+              </div>
             </div>
 
             {/* Social Links */}
